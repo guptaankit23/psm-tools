@@ -3,7 +3,7 @@ import sys
 
 found = False
 
-def import_lib(pipelines = ["ent", "cloud"]):
+def import_lib(pipelines = ["ent", "cloud", "dss"]):
     found = False
     errors = []
     for pipeline in pipelines:

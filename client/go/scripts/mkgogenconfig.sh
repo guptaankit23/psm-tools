@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function usage() {
-   echo "Usage: $0 [cloud|ent] targetdir" 
+   echo "Usage: $0 [cloud|ent|dss] targetdir" 
    exit 1
 }
 
@@ -70,7 +70,7 @@ EOF
 
 [ $# -eq 2 ] || usage
 
-echo $1 | egrep 'cloud|ent' > /dev/null || usage
+echo $1 | egrep 'cloud|ent|dss' > /dev/null || usage
 pipeline=$1
 src_dirname=generated/src_${1}
 destdir=$2
