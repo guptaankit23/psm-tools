@@ -35,7 +35,7 @@ Security_policy:
         - 192.168.1.1        
       - name: pypi_example_security_policy_1_rule_2
         description: "rule2_sample"
-        apps: "pyp1_test_app"
+        apps: "pypi_example_app_1"
         action: permit
         from-ip-addresses:
         - 10.0.0.0/24
@@ -57,7 +57,7 @@ Security_policy:
         - 192.168.3.1        
       - name: pypi_example_security_policy_2_rule_2
         description: "rule2_sample"
-        apps: "pyp1_test_app"
+        apps: "pypi_example_app_1"
         action: permit
         from-ip-addresses:
         - 10.1.0.0/24

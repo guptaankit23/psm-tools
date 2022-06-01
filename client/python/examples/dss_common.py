@@ -139,9 +139,6 @@ def get_key_max_width(key_list):
 
 def get_network_body(input_dict):
     netspec_dict = {           
-                "firewall_profile" : NetworkNetworkFirewallProfile(
-                    enable_fw_logging = True,
-                ),
                 "virtual_router" : input_dict["vrf"],
                 "vlan_id" : input_dict["vlan"]
                 }
